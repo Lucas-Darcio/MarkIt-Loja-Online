@@ -1,10 +1,11 @@
 services:
   MarkIt-Backend:
+    image: markit-backend
     build:
       context: ./Backend
       target: development
     env_file: .env
-    command: npm start
+    command: mvn spring-boot:run
     volumes:
       - ./Backend:/usr/app
       - /usr/app/node_modules
@@ -19,9 +20,9 @@ services:
     image: mysql
     env_file: .env
     environment:
-      - MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
-      - MYSQL_DATABASE: $MYSQL_DATABASE
-      - MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_ROOT_HOST: "%"
     ports:
       - $MYSQL_LOCAL_PORT:$MYSQL_DOCKER_PORT
     volumes:
