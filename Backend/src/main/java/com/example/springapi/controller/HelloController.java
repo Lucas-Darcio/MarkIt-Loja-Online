@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/com/example/springapi/api")
 public class HelloController {
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "Conectado ao Backend Java com sucesso!";
+        return "Conectado ao Backend Java com sucesso! vamos jogar um video game?";
     }
 }
