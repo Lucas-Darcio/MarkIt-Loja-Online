@@ -2,7 +2,7 @@
 
 Uma loja em que você pode facilmente marcar os produtos que quer na sua lista de desejos.
 Eu já desenvolvi uma loja online, mas usando Node, express, prisma e Typescript para o backend, o objetivo desse novo projeto é fazer o Backend usando Java e Spring Boot aliada a várias outras bibliotecas, o Frontend será feito em React com tailwind.
-O objetivo principal desse meu projeto pessoal é atualizar meu conhecimento em programação em Java, e aprender a usar o spring boot, tecnologias que eu não tenho nenhuma experiência ainda (levar isso em consideração).
+O objetivo principal desse meu projeto pessoal é atualizar meu conhecimento em programação em Java, e aprender a usar o spring boot.
 # Plan
 
 - ~~Github~~
